@@ -11,7 +11,7 @@ public abstract class Pedido {
 
     private String produto;
     private Float preco;
-    private HashMap<String, Cliente> clientes = new HashMap<>();
+    private static HashMap<String, Cliente> clientes = new HashMap<>();
 
     public final String realizarPedido(Cliente cliente) {
         try {
